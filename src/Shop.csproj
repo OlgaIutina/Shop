@@ -1,0 +1,157 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\IMG_KB_164811.png" />
+    <None Remove="Resources\Images\IMG_KB_164816.png" />
+    <None Remove="Resources\Images\IMG_KB_185501.png" />
+    <None Remove="Resources\Images\IMG_KSd_185508.png" />
+    <None Remove="Resources\Images\IMG_KSd_195207.png" />
+    <None Remove="Resources\Images\IMG_KSho_185512.png" />
+    <None Remove="Resources\Images\IMG_KS_195213.png" />
+    <None Remove="Resources\Images\IMG_KS_195217.png" />
+    <None Remove="Resources\Images\IMG_KS_195222.png" />
+    <None Remove="Resources\Images\IMG_MB_174349.png" />
+    <None Remove="Resources\Images\IMG_MB_191200.png" />
+    <None Remove="Resources\Images\IMG_MB_191205.png" />
+    <None Remove="Resources\Images\IMG_MSho_190514.png" />
+    <None Remove="Resources\Images\IMG_MSho_190518.png" />
+    <None Remove="Resources\Images\IMG_MSho_191612.png" />
+    <None Remove="Resources\Images\IMG_MS_185531.png" />
+    <None Remove="Resources\Images\IMG_MS_185532.png" />
+    <None Remove="Resources\Images\IMG_MS_185533.png" />
+    <None Remove="Resources\Images\IMG_WB_170859.png" />
+    <None Remove="Resources\Images\IMG_WB_170905.png" />
+    <None Remove="Resources\Images\IMG_WB_170906.png" />
+    <None Remove="Resources\Images\IMG_WSd_174332.png" />
+    <None Remove="Resources\Images\IMG_WSd_185156.png" />
+    <None Remove="Resources\Images\IMG_WSd_185551.png" />
+    <None Remove="Resources\Images\IMG_WSho_174409.png" />
+    <None Remove="Resources\Images\IMG_WSho_185202.png" />
+    <None Remove="Resources\Images\IMG_WSho_185545.png" />
+    <None Remove="Resources\Images\IMG_WS_174110.png" />
+    <None Remove="Resources\Images\IMG_WS_185528.png" />
+    <None Remove="Resources\Images\IMG_WS_185535.png" />
+    <None Remove="Resources\Images\IMG_WS_185538.png" />
+    <None Remove="Resources\Images\picture.png" />
+    <None Remove="Resources\Чудо Обувь.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\IMG_KB_164811.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KB_164816.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KB_185501.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KSd_185508.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KSd_195207.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KSho_185512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KS_195213.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KS_195217.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_KS_195222.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MB_174349.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MB_191200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MB_191205.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MSho_190514.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MSho_190518.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MSho_191612.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MS_185531.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MS_185532.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_MS_185533.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WB_170859.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WB_170905.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WB_170906.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSd_174332.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSd_185156.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSd_185551.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSho_174409.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSho_185202.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WSho_185545.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WS_174110.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WS_185528.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WS_185535.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\IMG_WS_185538.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\picture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Чудо Обувь.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

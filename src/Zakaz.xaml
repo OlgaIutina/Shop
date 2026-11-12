@@ -1,0 +1,26 @@
+﻿<Window x:Class="Shop.Zakaz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="Чудо-обувь. Список заказов" Height="450" Width="800"
+        Icon="Resources/Чудо Обувь.png">
+    <Grid>
+        <Image Source="/Resources/Чудо Обувь.png" Width="auto" Margin="49,46,619,294"/>
+        <Button x:Name="create" Background="#D2F6E7" Content="Создать новый заказ" HorizontalAlignment="Left" Margin="22,140,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="16" Width="188" FontWeight="Bold" Foreground="#FF70B2AF" Click="Button_Click_1"/>
+        <Button x:Name="look"  Background="#D2F6E7" Content="Посмотреть состав заказа" HorizontalAlignment="Left" Margin="21,174,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="16" Width="189" FontWeight="Bold" Foreground="#FF70B2AF" Click="look_Click"/>
+        <Button x:Name="otmena" Background="#D2F6E7" Content="Отменить заказ" HorizontalAlignment="Left" Margin="21,214,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="16" Width="188" FontWeight="Bold" Foreground="#FF70B2AF" Click="otmena_Click"/>
+        <Button  x:Name="edit" Background="#D2F6E7" Content="Редактировать заказ" HorizontalAlignment="Left" Margin="21,248,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="16" Width="188" FontWeight="Bold" Foreground="#FF70B2AF" Click="edit_Click" />
+        <Button Foreground="#FF70B2AF" Background="#D2F6E7" Content="Назад в каталог" HorizontalAlignment="Left" Margin="596,17,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="16" Width="182" Click="Button_Click" FontWeight="Bold"/>
+        <DataGrid Background="#D2F6E7" x:Name="orders"  Margin="227,57,22,33" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" FontFamily="Calibri" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="№" Binding="{Binding Number}" Width="50"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy}}" Width="100"/>
+                <DataGridTextColumn Header="ФИО клиента" Binding="{Binding ClientFio}" Width="*"/>
+                <DataGridTextColumn Header="Сумма" Binding="{Binding Total, StringFormat={}{0:N0}}" Width="110"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

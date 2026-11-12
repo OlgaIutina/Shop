@@ -1,0 +1,36 @@
+﻿<Window x:Class="Shop.AddOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Чудо-обувь. Добавление позиции в заказ" Height="500" Width="900"
+        Icon="Resources/Чудо Обувь.png"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Поиск:" HorizontalAlignment="Left" Margin="20,15,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="14"/>
+        <TextBox x:Name="searchBox" HorizontalAlignment="Left" Margin="80,18,0,0" Width="200" VerticalAlignment="Top" TextChanged="SearchBox_TextChanged"/>
+        <Button Content="Закрыть" HorizontalAlignment="Right" Margin="0,15,20,0" Width="100" Height="28" VerticalAlignment="Top" Click="Close_Click"/>
+
+        <ListBox x:Name="productsList" Margin="20,55,450,20" SelectionChanged="ProductsList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="0,4">
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Width="220"/>
+                        <TextBlock Text="{Binding Price, StringFormat={}{0:N0} ₽}" Width="90"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Label Content="Размеры (в наличии):" HorizontalAlignment="Left" Margin="470,60,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold"/>
+        <ComboBox x:Name="sizeCombo" HorizontalAlignment="Left" Margin="470,85,0,0" Width="200" VerticalAlignment="Top"/>
+
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="470,120,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold"/>
+        <TextBox x:Name="qtyBox" HorizontalAlignment="Left" Margin="470,145,0,0" Width="80" VerticalAlignment="Top" Text="1"/>
+
+        <Label Content="Цена:" HorizontalAlignment="Left" Margin="470,180,0,0" VerticalAlignment="Top" FontFamily="Calibri"/>
+        <Label x:Name="priceLabel" Content="0 ₽" HorizontalAlignment="Left" Margin="520,180,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontWeight="Bold"/>
+
+        <Button Content="Добавить в заказ" Background="#D2F6E7" Foreground="#FF70B2AF" FontWeight="Bold"
+                HorizontalAlignment="Left" Margin="470,230,0,0" VerticalAlignment="Top"
+                Width="200" Height="35" Click="Add_Click"/>
+    </Grid>
+</Window>
